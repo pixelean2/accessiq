@@ -60,7 +60,6 @@
 
 body {
 	background-color: var(--gray-100);
-	font-family: "Roboto", sans-serif;
 }
 
 .main-section {
@@ -82,6 +81,16 @@ body {
 
 .logo {
 	padding-bottom: 24px;
+	position: relative;
+}
+.logo:before{
+	content: '';
+	position: absolute;
+	left: -24px;
+	right: -24px;
+	bottom: 0;
+	height: 1px;
+	background-color: var(--grey200);
 }
 
 .logo a {
@@ -99,4 +108,41 @@ body {
 	line-height: 16px;
 	text-transform: uppercase;
 	color: var(--grey500);
+	padding-bottom: 20px;
+}
+
+.left-sidebar-menu  ul{
+	list-style: none;
+	padding: 0;
+}
+.left-sidebar-menu  ul li{
+
+}
+.left-sidebar-menu  ul li a{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	text-decoration: none;
+	padding: 14px 10px;
+	transition: all 0.5s;
+	border-radius: 8px;
+}
+.left-sidebar-menu  ul li a:hover{
+	background-color: #F0F0FF;
+}
+.left-sidebar-menu  ul li a:hover svg path{
+	fill: #020381;
+}
+.left-sidebar-menu  ul li a i{
+	display: inline-block;
+	line-height: 0.5;
+}
+.left-sidebar-menu  ul li a svg,
+.left-sidebar-menu  ul li a svg path{
+	transition: all 0.5s;
+}
+.left-sidebar-menu-text{
+	line-height: 20px;
+	color: var(--grey900);
+	text-transform: capitalize;
 }
