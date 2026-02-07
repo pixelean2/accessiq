@@ -1,0 +1,46 @@
+:root{
+	--gray-100: #F9F9FB;
+	--white: #fff;
+	--grey500: #A4A4A8;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: var(--gray-100);
+}
+
+.main-section{
+	display: flex;
+}
+.left-sidebar{
+	width: 17%;
+}
+.right-sidebar{
+	width: 83%;
+}
+.left-sidebar-inner{
+	background-color: var(--white);
+	padding: 24px 24px;
+}
+.logo{
+	padding-bottom: 24px;
+}
+.logo a{
+	display: inline-block;
+}
+.left-sidebar-menu{
+	padding-top: 24px;
+}
+.left-sidebar-menu-title{
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: var(--grey500);
+}
