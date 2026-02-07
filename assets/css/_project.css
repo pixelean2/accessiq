@@ -1,0 +1,243 @@
+.right-sidebar {
+    background-color: var(--grey100);
+    padding: 24px 24px 24px 16px;
+}
+
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.project-list-item {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 16px;
+
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-card-header-store-name {
+    color: var(--dark);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5em
+}
+
+.project-card-header-store-link {
+    color: var(--grey600);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.14em;
+    display: flex;
+    gap: 4px;
+}
+
+.project-card-header-badge span {
+    color: var(--badge-active);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28em;
+    border: 1px solid var(--badge-active);
+    border-radius: 4px;
+    padding: 3px 8px;
+}
+
+.project-card-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.progress-wrap {
+    position: relative;
+    height: 160px;
+    width: 160px;
+}
+
+.progress-ring {
+    transform: rotate(-90deg);
+}
+
+.progress-ring__bg,
+.progress-ring__progress {
+    fill: none;
+    stroke-width: 14;
+}
+
+.progress-ring__bg {
+    stroke: #F0F0F4;
+}
+
+.progress-ring__progress {
+    stroke: #1EDBB8;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.6s ease;
+}
+
+.progress-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 500;
+}
+
+
+
+
+.progress-badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 6px;
+    color: var(--completed-text);
+    border: 1px solid var(--completed-border);
+    background-color: var(--completed-bg);
+    border-radius: 4px;
+}
+
+.progress-badge svg {
+    height: 18px;
+    width: 18px;
+}
+
+
+.progress-badge span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+
+
+
+.project-card-issue-box {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--green100);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.total-issues {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.critical-issues {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.moderate-issues {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-issue {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: var(--grey900);
+}
+
+.total-issue-number {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: var(--grey900);
+}
+
+.critical-issue {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: var(--grey600);
+}
+
+.critical-issue-number {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: var(--critical-text);
+}
+
+.moderate-issue {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: var(--grey600);
+}
+
+.moderate-issue-number {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: var(--moderate-text);
+}
+
+
+
+
+.project-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.last-scan-content {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: var(--grey600);
+}
+
+.last-scan-content span {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: var(--grey900);
+}
+
+.project-card-detail-btn a {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    display: flex;
+    gap: 2px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: var(--green500);
+    border: 1px solid var(--green500);
+    text-decoration: none;
+}

@@ -1,7 +1,6 @@
-:root{
-	--gray-100: #F9F9FB;
+:root {
 	--white: #fff;
-	--grey500: #A4A4A8;
+	--dark: #000000;
 	--blue100: #F5F5FF;
 	--blue200: #E6E6FF;
 	--blue300: #3638FC;
@@ -11,7 +10,7 @@
 	--blue700: #01013C;
 	--blue800: #010128;
 	--blue900: #000014;
-	--green100: #F5FCFF;
+	--green100: #F3FCFF;
 	--green200: #DDE8FB;
 	--green300: #8AD7F7;
 	--green400: #56C4F1;
@@ -29,50 +28,71 @@
 	--grey700: #58585A;
 	--grey800: #323234;
 	--grey900: #141415;
-	--white100: rgba(255,255,255,0.1);
-	--white200: rgba(255,255,255,0.2);
-	--white300: rgba(255,255,255,0.3);
-	--white400: rgba(255,255,255,0.4);
-	--white500: rgba(255,255,255,0.5);
-	--white600: rgba(255,255,255,0.6);
-	--white700: rgba(255,255,255,0.7);
-	--white800: rgba(255,255,255,0.8);
-	--white900: rgba(255,255,255,0.9);
+	--white100: rgba(255, 255, 255, 0.1);
+	--white200: rgba(255, 255, 255, 0.2);
+	--white300: rgba(255, 255, 255, 0.3);
+	--white400: rgba(255, 255, 255, 0.4);
+	--white500: rgba(255, 255, 255, 0.5);
+	--white600: rgba(255, 255, 255, 0.6);
+	--white700: rgba(255, 255, 255, 0.7);
+	--white800: rgba(255, 255, 255, 0.8);
+	--white900: rgba(255, 255, 255, 0.9);
+	--badge-active: #1EA477;
+	--inprogress-text: #365EFF;
+	--inprogress-bg: #EBEFFE;
+	--inprogress-border: rgba(39, 96, 255, 0.30);
+	--critical-text: #FF4E3E;
+	--critical-bg: #FEEDEB;
+	--critical-border: rgba(255, 78, 62, 0.30);
+	--moderate-text: #FF9C12;
+	--moderate-bg: #FEF6EB;
+	--moderate-border: rgba(255, 156, 18, 0.30);
+	--completed-text: #1EA477;
+	--completed-bg: #EBFEF8;
+	--completed-border: rgba(30, 164, 119, 0.30);
 }
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-body{
+body {
 	background-color: var(--gray-100);
+	font-family: "Roboto", sans-serif;
 }
 
-.main-section{
+.main-section {
 	display: flex;
 }
-.left-sidebar{
+
+.left-sidebar {
 	width: 17%;
 }
-.right-sidebar{
+
+.right-sidebar {
 	width: 83%;
 }
-.left-sidebar-inner{
+
+.left-sidebar-inner {
 	background-color: var(--white);
 	padding: 24px 24px;
 }
-.logo{
+
+.logo {
 	padding-bottom: 24px;
 }
-.logo a{
+
+.logo a {
 	display: inline-block;
 }
-.left-sidebar-menu{
+
+.left-sidebar-menu {
 	padding-top: 24px;
 }
-.left-sidebar-menu-title{
+
+.left-sidebar-menu-title {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
