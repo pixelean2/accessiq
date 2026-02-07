@@ -79,7 +79,15 @@ body {
 	padding: 24px 24px;
 }
 
+<<<<<<< HEAD
 .logo {
+=======
+.right-sidebar-inner{
+	padding: 24px 24px 24px 16px;
+}
+
+.logo{
+>>>>>>> 05cd9aaeb7e7747e5e3dd7631244162909ac1ac8
 	padding-bottom: 24px;
 	position: relative;
 }
