@@ -32,3 +32,21 @@ document.querySelectorAll('.progress-wrap').forEach(wrap => {
 
     requestAnimationFrame(animate);
 });
+
+
+
+
+function openTab(event, tabId) {
+    let contents = document.getElementsByClassName("tab-content");
+    for (let content of contents) {
+        content.classList.remove("active-content");
+    }
+
+    let buttons = document.getElementsByClassName("tab-btn");
+    for (let btn of buttons) {
+        btn.classList.remove("active");
+    }
+
+    document.getElementById(tabId).classList.add("active-content");
+    event.currentTarget.classList.add("active");
+}

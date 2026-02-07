@@ -4,6 +4,79 @@
     min-height: 100vh;
 }
 
+.page-header-overview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+
+.project-overview-link a {
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: var(--white);
+    background-color: var(--green500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.project-overview-link a svg {
+    height: 18px;
+    width: 18px;
+    color: var(--white);
+}
+
+.tabs-container {
+font-family: "Roboto", sans-serif;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 32px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    transition: 0.3s;
+    border: 1px solid var(--grey200);
+    border-radius: 8px;
+    color: var(--grey900);
+font-family: "Roboto", sans-serif;
+
+
+
+}
+
+.tab-btn:hover {
+    background-color: var(--white);
+}
+
+.tab-btn.active {
+    background-color: var(--white);
+}
+
+
+.tab-content {
+    display: none;
+}
+
+.active-content {
+    display: block;
+}
+
+
 
 .project-list {
     display: grid;
@@ -39,7 +112,7 @@
     line-height: 1.5em
 }
 
-.project-card-header-store-link a{
+.project-card-header-store-link a {
     color: var(--grey600);
     font-size: 14px;
     font-style: normal;
