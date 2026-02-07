@@ -72,6 +72,11 @@ body{
 	background-color: var(--white);
 	padding: 24px 24px;
 }
+
+.right-sidebar-inner{
+	padding: 24px 24px 24px 16px;
+}
+
 .logo{
 	padding-bottom: 24px;
 	position: relative;
