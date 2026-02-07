@@ -1,0 +1,26 @@
+.project-card-progress.compliant .progress-ring__progress {
+    stroke: var(--completed-text);
+}
+.project-card-progress.compliant .progress-badge {
+    color: var(--completed-text);
+    border: 1px solid var(--completed-border);
+    background-color: var(--completed-bg);
+}
+
+.project-card-progress.non-compliant .progress-ring__progress {
+    stroke: var(--critical-text);
+}
+.project-card-progress.non-compliant .progress-badge {
+    color: var(--critical-text);
+    border: 1px solid var(--critical-border);
+    background-color: var(--critical-bg);
+}
+
+.project-card-progress.moderate .progress-ring__progress {
+    stroke: var(--moderate-text);
+}
+.project-card-progress.moderate .progress-badge {
+    color: var(--moderate-text);
+    border: 1px solid var(--moderate-border);
+    background-color: var(--moderate-bg);
+}

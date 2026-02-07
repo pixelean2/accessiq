@@ -1,6 +1,7 @@
 .right-sidebar {
     background-color: var(--grey100);
     padding: 24px 24px 24px 16px;
+    min-height: 100vh;
 }
 
 
@@ -38,7 +39,7 @@
     line-height: 1.5em
 }
 
-.project-card-header-store-link {
+.project-card-header-store-link a{
     color: var(--grey600);
     font-size: 14px;
     font-style: normal;
@@ -46,6 +47,7 @@
     line-height: 1.14em;
     display: flex;
     gap: 4px;
+    text-decoration: none;
 }
 
 .project-card-header-badge span {
@@ -58,6 +60,7 @@
     border-radius: 4px;
     padding: 3px 8px;
 }
+
 
 .project-card-progress {
     display: flex;
@@ -90,9 +93,7 @@
 }
 
 .progress-ring__progress {
-    stroke: #1EDBB8;
     stroke-linecap: round;
-    transition: stroke-dashoffset 0.6s ease;
 }
 
 .progress-text {
@@ -106,20 +107,46 @@
     font-weight: 500;
 }
 
-
-
-
 .progress-badge {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 4px;
     padding: 5px 6px;
+    border-radius: 4px;
+}
+
+.project-card-progress.compliant .progress-ring__progress {
+    stroke: var(--completed-text);
+}
+
+.project-card-progress.compliant .progress-badge {
     color: var(--completed-text);
     border: 1px solid var(--completed-border);
     background-color: var(--completed-bg);
-    border-radius: 4px;
 }
+
+.project-card-progress.critical .progress-ring__progress {
+    stroke: var(--critical-text);
+}
+
+.project-card-progress.critical .progress-badge {
+    color: var(--critical-text);
+    border: 1px solid var(--critical-border);
+    background-color: var(--critical-bg);
+}
+
+.project-card-progress.moderate .progress-ring__progress {
+    stroke: var(--moderate-text);
+}
+
+.project-card-progress.moderate .progress-badge {
+    color: var(--moderate-text);
+    border: 1px solid var(--moderate-border);
+    background-color: var(--moderate-bg);
+}
+
+
 
 .progress-badge svg {
     height: 18px;
