@@ -32,7 +32,7 @@
 }
 
 .tabs-container {
-font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .tab-buttons {
@@ -53,7 +53,7 @@ font-family: "Roboto", sans-serif;
     border: 1px solid var(--grey200);
     border-radius: 8px;
     color: var(--grey900);
-font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 
 
 

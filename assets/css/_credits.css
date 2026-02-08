@@ -1,0 +1,253 @@
+.credits-overview {
+    display: flex;
+    gap: 16px;
+}
+
+.available-credits {
+    padding: 16px;
+    background-color: var(--white);
+    width: 56%;
+    border-radius: 12px;
+}
+
+.total-credit-used {
+    padding: 16px;
+    background-color: var(--white);
+    width: 44%;
+    border-radius: 12px;
+}
+
+.credit-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-bottom: 1px solid var(--grey200);
+    padding-bottom: 16px;
+}
+
+.credit-header {
+    display: flex;
+    gap: 12px;
+    justify-items: center;
+    align-items: center;
+}
+
+.credit-icon {
+    background-color: var(--blue100);
+    color: var(--blue300);
+    padding: 9px;
+    border-radius: 8px;
+    height: 36px;
+    width: 36px;
+}
+
+.credit-icon svg {
+    height: 100%;
+    width: 100%;
+}
+
+.total-credit-used .credit-icon {
+    background-color: #FFFAF5;
+    color: #FFAB4B;
+    padding: 9px;
+}
+
+
+.credit-title {
+    color: var(--grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em
+}
+
+.credit-amount {
+    color: var(--grey900);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.3em
+}
+
+
+
+
+.validity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.valid-use span {
+    color: var(--grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em
+}
+
+.valid-use span strong {
+    color: var(--grey900);
+    font-weight: 500;
+}
+
+.credit-history {
+    padding-top: 32px;
+    display: flex;
+    gap: 16px;
+}
+
+.active-package-credits {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--grey200);
+    background-color: var(--white);
+}
+
+.credits-transaction-history {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--grey200);
+    background-color: var(--white);
+}
+
+.active-fix-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.active-fix-item {
+    background-color: #FAFAFD;
+    border-radius: 8px;
+    border: 1px solid var(--grey100);
+    padding: 14px;
+}
+
+
+.project-status-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Left side */
+.project-domain {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: var(--dark);
+}
+
+.status-badges {
+    display: flex;
+    gap: 8px;
+}
+
+.badge {
+    padding: 3px 6px;
+    font-size: 14px;
+    line-height: 1.29em;
+    font-weight: 400;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.badge-inprogress {
+    background: var(--inprogress-bg);
+    color: var(--inprogress-text);
+    border: 1px solid var(--inprogress-border);
+}
+
+.badge-critical {
+    background: var(--critical-bg);
+    color: var(--critical-text);
+    border: 1px solid var(--critical-border);
+}
+
+.badge-moderate {
+    background: var(--moderate-bg);
+    color: var(--moderate-text);
+    border: 1px solid var(--moderate-border);
+}
+
+.badge-completed {
+    background: var(--completed-bg);
+    color: var(--completed-text);
+    border: 1px solid var(--completed-border);
+}
+
+.status-meta {
+    display: flex;
+    gap: 16px;
+    color: var(--grey600);
+    font-size: 14px;
+    line-height: 1.29em;
+    font-weight: 400;
+}
+
+.status-meta .meta-item {
+
+    font-weight: 500;
+}
+
+
+.status-meta .meta-item-dark {
+    color: var(--grey900);
+}
+
+/* Right side */
+.status-right {
+    display: flex;
+    align-items: center;
+}
+
+.aiq-progress-wrap {
+    position: relative;
+    width: 88px;
+    height: 88px;
+}
+
+.aiq-progress-ring {
+    transform: rotate(-90deg);
+}
+
+.aiq-progress-ring__bg,
+.aiq-progress-ring__progress {
+    fill: none;
+    stroke-width: 8;
+}
+
+.aiq-progress-ring__bg {
+    stroke: #F0F0F4;
+}
+
+.aiq-progress-ring__progress {
+    stroke-linecap: round;
+}
+
+.aiq-progress-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.completed .aiq-progress-ring__progress {
+    stroke: var(--completed-text);
+}
+
+.inprogress .aiq-progress-ring__progress {
+    stroke: var(--inprogress-text);
+}
