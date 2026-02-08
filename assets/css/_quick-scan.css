@@ -1,0 +1,121 @@
+.quick-scan-container {
+    max-width: 50%;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.search-box-container {
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--blue200);
+}
+
+
+#scan-accessibility-form {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+}
+
+#scan-accessibility-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* width: 100%; */
+}
+
+#scan-accessibility-form .form-group label {}
+
+#scan-accessibility-form .form-group input {
+    width: 100%;
+}
+
+
+
+#scan-accessibility-form .submit-btn {
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    color: var(--white);
+    background-color: var(--green500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+}
+
+#scan-accessibility-form .submit-btn svg {
+    height: 18px;
+    width: 18px;
+    color: var(--white);
+}
+
+
+
+
+
+.quick-scan-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.quick-scan-card-item {
+    background-color: var(--white);
+    border: 1px solid var(--grey200);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.quick-scan-card-icon {
+    padding: 9px;
+    border-radius: 8px;
+    background-color: var(--blue100);
+
+}
+
+.quick-scan-card-icon svg {
+    height: 100%;
+    width: 100%;
+    color: var(--blue300);
+}
+
+.quick-scan-card-content .quick-scan-card-heading {
+    font-family: "Roboto", sans-serif;
+    color: var(--grey900);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-bottom: 4px;
+}
+
+.quick-scan-card-content .quick-scan-card-desc {
+    color: var(--Grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
