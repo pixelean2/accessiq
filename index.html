@@ -267,7 +267,70 @@
 						</div>
 					</div>
 
-
+					<div class="dashboard-compliance">
+						<div class="dashboard-compliance-grid">
+							<div class="dashboard-compliance-grid-item">
+								<div class="dashboard-compliance-grid-item-inner">
+									<div class="dashboard-compliance-grid-top">
+										<div class="dashboard-compliance-grid-top-col">
+											<div class="dashboard-compliance-des">
+												<h4 class="dashboard-compliance-des-title">Compliance Distribution</h4>
+												<p>Overview of Compliance Distribution</p>
+											</div>
+										</div>
+										<div class="dashboard-compliance-grid-top-col">
+											<div class="dashboard-compliance-des">
+												<select id="timeRange">
+											      <option value="weekly">Weekly</option>
+											      <option value="monthly">Monthly</option>
+											    </select>
+											</div>
+										</div>
+									</div>
+									<div class="dashboard-compliance-grid-middle">
+										<canvas id="complianceChart"></canvas>
+									</div>
+									<div class="dashboard-compliance-grid-bottom">
+										<div class="chart-labels">
+										    <div class="label-item">
+										      <span class="dot blue"></span> Compliant <b id="compliantVal">65%</b>
+										    </div>
+										    <div class="label-item">
+										      <span class="dot orange"></span> Nearly Compliant <b id="nearlyVal">25%</b>
+										    </div>
+										    <div class="label-item">
+										      <span class="dot pink"></span> Non-Compliant <b id="nonVal">10%</b>
+										    </div>
+										  </div>
+									</div>
+								</div>
+							</div>
+							<div class="dashboard-compliance-grid-item">
+								<div class="dashboard-compliance-grid-item-inner">
+									<div class="dashboard-compliance-grid-top">
+										<div class="dashboard-compliance-grid-top-col">
+											<div class="dashboard-compliance-des">
+												<h4 class="dashboard-compliance-des-title">Compliance Trend</h4>
+												<p>Overview of Compliance Trend</p>
+											</div>
+										</div>
+										<div class="dashboard-compliance-grid-top-col">
+											<div class="dashboard-compliance-des">
+												<select id="timeRange2">
+											      <option value="weekly">Yearly</option>
+											      <option value="monthly">Monthly</option>
+											    </select>
+											</div>
+										</div>
+									</div>
+									<div class="dashboard-compliance-grid-middle">
+										<canvas id="complianceChart2"></canvas>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<div class="dashoard-scans">
 						<div class="dashboard-scans-grid">
@@ -512,10 +575,91 @@
 							</div>
 						</div>
 					</div>
+					<div class="dashboard-subscription">
+						<div class="dashboard-subscription-inner">
+							<div class="ds-top">
+								<div class="dashboard-subscription-top">
+									<div class="dashboard-subscription-top-col">
+										<div class="dashboard-subscription-des">
+											<h4 class="dashboard-subscription-title">Active Subscriptions</h4>
+											<p>Explore the Latest Insights from Our Scans</p>
+										</div>
+									</div>
+									<div class="dashboard-subscription-top-col">
+										<div class="dashboard-subscription-button">
+											<a href="#">view all</a>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="dashboard-subscription-grid">
+								<div class="dashbaord-subscription-grid-item">
+									<div class="dashbaord-subscription-grid-item-inner">
+										<span class="subscription-status">active</span>
+										<h5 class="subscription-title">mystore.com</h5>
+										<span class="subscription-link">https//:mystore.com</span>
+										<div class="subscription-monitoring">
+											<div class="subscription-monitoring-col">
+												<img src="assets/images/clock.svg">
+												<span class="subscription-monitoring-text">Next scan in 4 hours</span>
+											</div>
+											<div class="subscription-monitoring-col">
+												<img src="assets/images/calender.svg">
+												<span class="subscription-monitoring-text">Daily monitoring</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="dashbaord-subscription-grid-item">
+									<div class="dashbaord-subscription-grid-item-inner">
+										<span class="subscription-status">active</span>
+										<h5 class="subscription-title">mystore.com</h5>
+										<span class="subscription-link">https//:mystore.com</span>
+										<div class="subscription-monitoring">
+											<div class="subscription-monitoring-col">
+												<img src="assets/images/clock.svg">
+												<span class="subscription-monitoring-text">Next scan in 2 days</span>
+											</div>
+											<div class="subscription-monitoring-col">
+												<img src="assets/images/calender.svg">
+												<span class="subscription-monitoring-text">Daily monitoring</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="dashbaord-subscription-grid-item">
+									<div class="dashbaord-subscription-grid-item-inner">
+										<span class="subscription-status">active</span>
+										<h5 class="subscription-title">mystore.com</h5>
+										<span class="subscription-link">https//:mystore.com</span>
+										<div class="subscription-monitoring">
+											<div class="subscription-monitoring-col">
+												<img src="assets/images/clock.svg">
+												<span class="subscription-monitoring-text">Next scan in 15 days</span>
+											</div>
+											<div class="subscription-monitoring-col">
+												<img src="assets/images/calender.svg">
+												<span class="subscription-monitoring-text">Daily monitoring</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
+
+
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
 
 
 </body>
