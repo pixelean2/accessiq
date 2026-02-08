@@ -1,32 +1,45 @@
-.quick-scan-container {
-    max-width: 50%;
-    width: 100%;
-    margin: 0px auto;
+.quick-scan-page .right-sidebar{
     display: flex;
-    flex-direction: column;
-    gap: 32px;
-
+    justify-content: center;
+    align-items: center;
 }
 
 
+.quick-scan-container {
+    max-width: 770px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
 
+.quick-scan-heading {
+    color: var(--grey900);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.3em;
+    margin-bottom: 8px;
+}
 
-
-
-
-
-
-
-
-
+.quick-scan-desc {
+    color: var(--grey600);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
 
 .search-box-container {
     padding: 40px;
     background-color: var(--white);
     border-radius: 12px;
     border: 1px solid var(--blue200);
+    width: 100%;
 }
-
 
 #scan-accessibility-form {
     display: flex;
@@ -38,15 +51,65 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    /* width: 100%; */
-}
-
-#scan-accessibility-form .form-group label {}
-
-#scan-accessibility-form .form-group input {
     width: 100%;
 }
 
+#scan-accessibility-form .form-group label {
+    color: var(--grey900);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.inputcont {
+    position: relative;
+}
+
+.inputcont:before {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    content: "";
+    width: 18px;
+    height: 18px;
+    /* background-color: aqua; */
+    transform: translateY(-50%);
+    background-image: url("../images/glove.svg");
+    /* your svg file */
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--grey500);
+}
+
+#scan-accessibility-form .form-group input {
+    width: 100%;
+    padding: 7px 12px 7px 42px;
+    border-radius: 8px;
+    border: 1px solid var(--grey200);
+    height: 48px;
+    color: var(--grey900);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+#scan-accessibility-form .form-group input::placeholder,
+#scan-accessibility-form .form-group input::-webkit-input-placeholder {
+    color: var(--grey400);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+#scan-accessibility-form .form-group input:focus {
+    outline: none;
+    border-color: var(--green500);
+}
+
+#scan-accessibility-form .submit-container {
+    height: 48px;
+    width: 150px;
+}
 
 
 #scan-accessibility-form .submit-btn {
@@ -55,6 +118,7 @@
     padding: 14px 24px;
     color: var(--white);
     background-color: var(--green500);
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +126,8 @@
     font-size: 16px;
     line-height: 20px;
     border: none;
+    height: 48px;
+    width: 150px;
 }
 
 #scan-accessibility-form .submit-btn svg {
