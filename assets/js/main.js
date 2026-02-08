@@ -79,3 +79,86 @@ dropdown.addEventListener('change', function () {
 
 
 
+const ctx2 = document.getElementById('complianceChart2').getContext('2d');
+
+const yearlyData = [82, 91, 97, 76, 84, 72, 93, 90, 97, 82, 91, 96];
+const monthlyData = [88, 92, 85, 90];
+
+const labelsYearly = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const labelsMonthly = ['Week 1', 'Week 2', 'Week 3', 'Week 4'];
+
+
+const normalGradient = ctx2.createLinearGradient(0, 0, 0, 400);
+normalGradient.addColorStop(0, '#C5EAF5'); 
+normalGradient.addColorStop(1, '#E5F7FD'); 
+
+
+const hoverGradient = ctx2.createLinearGradient(0, 0, 0, 400);
+hoverGradient.addColorStop(0, '#51CCF0'); 
+hoverGradient.addColorStop(1, '#00A8E0'); 
+
+const barChart = new Chart(ctx2, {
+  type: 'bar',
+  data: {
+    labels: labelsYearly,
+    datasets: [{
+      data: yearlyData,
+      backgroundColor: (ctx) => ctx.active ? hoverGradient : normalGradient,
+      borderRadius: 10,
+      borderSkipped: false
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    animation: {
+      duration: 1000,
+      easing: 'easeOutQuart'
+    },
+    animations: {
+      y: {
+        from: (ctx) => ctx.chart.scales.y.getPixelForValue(0) 
+      }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        enabled: true,
+        callbacks: {
+          label: function(context) {
+            return context.dataset.data[context.dataIndex];
+          }
+        }
+      }
+    },
+    scales: {
+      y: {
+        min: 60,
+        max: 100,
+        grid: {
+          borderDash: [5,5],
+          color: '#F0F0F4'
+        }
+      },
+      x: { grid: { display: false } }
+    },
+    hover: { mode: 'nearest', intersect: true }
+  }
+});
+
+
+
+document.getElementById('timeRange2').addEventListener('change', (e) => {
+  if (e.target.value === 'monthly') {
+    barChart.data.labels = labelsMonthly;
+    barChart.data.datasets[0].data = monthlyData;
+  } else {
+    barChart.data.labels = labelsYearly;
+    barChart.data.datasets[0].data = yearlyData;
+  }
+  barChart.update();
+});
+
+
+
+
