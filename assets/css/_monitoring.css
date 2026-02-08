@@ -1,0 +1,227 @@
+.monitoring-top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding-bottom: 32px;
+}
+
+.monitoring-title{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #000;
+	padding-bottom: 8px;
+}
+.monitoring-des p{
+	margin-bottom: 0;
+	color: var(--grey500);
+}
+.monitoring-button a{
+	display: inline-flex;
+	padding: 10px 12px;
+	background-color: #00A8E0;
+	border-radius: 8px;
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--white);
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.monitoring-grid{
+	padding-bottom: 16px;
+	display: flex;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+.monitoring-grid-item{
+	width: 25%;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.monitoring-grid-item-inner{
+	padding: 16px 16px;
+	background-color: var(--white);
+	border: 1px solid var(--grey200);
+	border-radius: 12px;
+}
+.monitoring-grid-top{
+	padding-bottom: 24px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.monitoring-grid-top-text{
+	color: var(--grey600);
+}
+.monitoring-grid-middle{
+	padding-bottom: 16px;
+}
+.monitoring-number{
+	margin: 0;
+	font-size: 32px;
+	line-height: 42px;
+	letter-spacing: -1px;
+	color: var(--grey900);
+	font-weight: 500;
+}
+.monitoring-grid-bottom{
+	padding-top: 16px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.monitoring-grid-bottom:before{
+	content: '';
+	position: absolute;
+	left: -16px;
+	right: -16px;
+	top: 0;
+	height: 1px;
+	background-color: var(--grey200);
+}
+.monitoring-grd-btm-text{
+	color: var(--grey600);
+}
+.monitoring-grid-btm-col{
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+.monitoring-growth-text{
+	color: #00BF77;
+}
+.growthdown-text{
+	color: #FF4E3E;
+}
+.monitoring-website-inner{
+	padding: 16px 16px;
+	background-color: var(--white);
+}
+.monitoring-website-top{
+	padding-bottom: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+.monitoring-website-des-title{
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 500;
+	color: #000;
+	margin: 0;
+}
+.monitoring-website-des p{
+	margin: 0;
+	font-size: 14px;
+	line-height: 18px;
+	color: var(--grey600);
+}
+.monitoring-website-button a{
+	text-decoration: none;
+	display: inline-flex;
+	padding: 9px 12px;
+	border: 1px solid #F0F0F5;
+	border-radius: 8px;
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--grey900);
+	text-transform: capitalize;
+}
+.monitoring-table{
+	border: 1px solid var(--grey200);
+	border-radius: 8px;
+}
+.monitoring-table table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.monitoring-table table thead tr th:first-child{
+	width: 23%;
+}
+.monitoring-table table thead tr th:nth-child(2){
+	width: 10%;
+}
+.monitoring-table table thead tr th:nth-child(3){
+	width: 14%;
+}
+.monitoring-table table thead tr th:nth-child(4){
+	width: 15%;
+}
+.monitoring-table table thead tr th:nth-child(5){
+	width: 9%;
+}
+.monitoring-table table thead tr th:nth-child(6){
+	width: 12%;
+}
+.monitoring-table table thead tr th:nth-child(7){
+	width: 8%;
+}
+.monitoring-table table thead tr th{
+	padding: 15px 16px;
+	background-color: var(--green100);
+	font-weight: 500;
+	color: var(--grey900);
+	text-align: left;
+}
+.monitoring-table table tbody tr td{
+	padding: 15px 16px;
+	color: var(--grey900);
+}
+.monitoring-table table tbody tr:nth-child(2n+2){
+	background-color: var(--grey100);
+}
+.table-icon-wrap{
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+.table-grow{
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 5px 8px;
+	background-color: #EBFEF8;
+	border-radius: 4px;
+}
+.table-grow-down{
+	background-color: #FEEDEB;
+}
+.table-grow-down .table-grow-text{
+	color: #FF4E3E;
+}
+.table-grow-text{
+	text-transform: uppercase;
+	color: #00BF77;
+	font-size: 14px;
+	line-height: 16px;
+}
+.table-active{
+	display: inline-block;
+	padding: 3px 8px;
+	border: 1px solid #00A774;
+	border-radius: 4px;
+	text-transform: uppercase;
+	color: #00A774;
+	font-size: 14px;
+	line-height: 18px;
+}
+.table-action-icon{
+	display: inline-flex;
+	padding: 4px 4px;
+	background-color: var(--grey200);
+	border-radius: 4px;
+}
+.table-pause{
+	display: inline-block;
+	padding: 3px 8px;
+	border: 1px solid #FF9C12;
+	border-radius: 4px;
+	text-transform: uppercase;
+	color: #FF9C12;
+	font-size: 14px;
+	line-height: 18px;
+}
