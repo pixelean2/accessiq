@@ -218,7 +218,7 @@
 }
 
 .dashboard-scans-issue-grid-item{
-	padding-bottom: 8px;
+	padding-bottom: 12px;
 }
 .dashboard-scans-issue-grid-item:last-child{
 	padding-bottom: 0;
@@ -404,10 +404,18 @@
 
 #timeRange,
 #timeRange2{
-	padding: 8px 12px;
+	padding: 8px 32px 8px 12px;
 	border: 1px solid #F0F0F5;
 	border-radius: 8px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url('../images/select-arrow.svg');
+	background-repeat: no-repeat;
+	background-position: right 12px center;
+	background-size: 9px 5px;
 }
+
 #timeRange option,
 #timeRange2 option{
 	font-size: 14px;
@@ -421,4 +429,8 @@
 #complianceChart{
 	margin-left: auto;
 	margin-right: auto;
+}
+.dashboard-compliance-grid-middle2{
+	padding-bottom: 0;
+	height: 280px;
 }
