@@ -202,7 +202,6 @@
     color: var(--grey900);
 }
 
-/* Right side */
 .status-right {
     display: flex;
     align-items: center;
@@ -250,4 +249,91 @@
 
 .inprogress .aiq-progress-ring__progress {
     stroke: var(--inprogress-text);
+}
+
+.credit-history-items{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.credit-history-item {
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--grey100);
+}
+
+.credit-status-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.credit-status-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.credit-status-icon {
+    background-color: var(--completed-bg);
+    padding: 9px;
+    border-radius: 8px;
+    height: 36px;
+    width: 36px;
+}
+
+.credit-status-icon svg {
+    height: 100%;
+    width: 100%;
+    color: var(--completed-text);
+}
+
+
+.credit-status-icon.completed {
+    background-color: var(--completed-bg);
+}
+
+.credit-status-icon.completed svg {
+    color: var(--completed-text);
+}
+
+.credit-status-icon.moderate {
+    background-color: var(--moderate-bg);
+}
+
+.credit-status-icon.moderate svg {
+    color: var(--moderate-text);
+}
+
+
+
+
+
+
+
+
+
+
+.credits-project-details {}
+
+.credits-project-details .time {
+    color: var(--grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25em;
+}
+
+.credit-status-right {}
+
+.used-cradits {
+    color: var(--grey600);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.14em;
+}
+
+.used-cradits span {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
 }
