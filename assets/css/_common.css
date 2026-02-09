@@ -80,6 +80,10 @@ body {
 	padding-left: 5%;
 }
 
+.sec-menu-expand .left-sidebar-menu ul li a{
+	justify-content: center;
+}
+
 .main-section {
 	display: flex;
 	padding-left: 17%;
@@ -153,7 +157,7 @@ body {
 	padding: 0;
 }
 .left-sidebar-menu  ul li{
-
+	padding-bottom: 4px;
 }
 .left-sidebar-menu  ul li a{
 	display: flex;
