@@ -222,6 +222,7 @@ body {
 	display: flex;
 	gap: 16px;
 	position: relative;
+	background-color: var(--white);
 }
 .profile-inner:before{
 	content: '';
