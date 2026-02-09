@@ -1,15 +1,3 @@
-
-
-document.querySelectorAll('.menu-expand').forEach(element => {
-  element.addEventListener('click', function(e) {
-    e.preventDefault();
-    const mainSection = document.querySelector('.main-section');
-    mainSection.classList.toggle('sec-menu-expand');
-  });
-});
-
-
-
 const ctx = document.getElementById('complianceChart').getContext('2d');
 
 
