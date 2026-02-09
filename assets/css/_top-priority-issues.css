@@ -1,6 +1,119 @@
+.top-priority-issues-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--grey200);
+    background-color: white;
+}
+
+
+
 .top-priority-issues-item {
     border: 1px solid var(--grey100);
     border-radius: 8px;
     background-color: var(--white);
     padding: 16px;
+}
+
+.top-priority-issues-card {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-priority-issues-card-leftside {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.top-priority-issues-card-icon-box {
+    color: var(--issue-text);
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #FEF2EB;
+    display: inline-flex;
+}
+
+.top-priority-issues-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.top-priority-issues-title {
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.top-priority-issues-meta {
+    display: flex;
+    gap: 12px;
+}
+
+.top-priority-issues-meta-item {
+    color: var(--grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25em;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.top-priority-issues-meta-item svg {
+    height: 16px;
+    width: 16px;
+}
+
+.top-priority-issues-meta-item.normal svg {
+    color: var(--grey600);
+}
+
+.top-priority-issues-meta-item.inprogress svg {
+    color: var(--blue300);
+}
+
+.top-priority-issues-meta-item.issue svg {
+    color: var(--issue-text);
+}
+
+.top-priority-issues-sites {
+    padding-top: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+.top-priority-issues-site-name {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: var(--grey100);
+    color: var(--grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25em;
+}
+
+.top-priority-issues-site-count {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.top-priority-issues-site-count svg {
+    height: 16px;
+    width: 16px;
+    color: #C34BFF;
+}
+
+.top-priority-issues-site-count span {
+    color: var(--grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25em;
 }

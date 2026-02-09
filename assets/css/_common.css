@@ -44,12 +44,14 @@
 	--critical-text: #FF4E3E;
 	--critical-bg: #FEEDEB;
 	--critical-border: rgba(255, 78, 62, 0.30);
-	--moderate-text: #FF9C12;
+	--moderate-text: #FF9C12; 
 	--moderate-bg: #FEF6EB;
 	--moderate-border: rgba(255, 156, 18, 0.30);
 	--completed-text: #1EA477;
 	--completed-bg: #EBFEF8;
 	--completed-border: rgba(30, 164, 119, 0.30);
+	--issue-text: #FF853E;
+	--issue-bg: #FEF2EB;
 }
 
 * {
