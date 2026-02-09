@@ -1,0 +1,6 @@
+.top-priority-issues-item {
+    border: 1px solid var(--grey100);
+    border-radius: 8px;
+    background-color: var(--white);
+    padding: 16px;
+}
