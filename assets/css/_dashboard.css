@@ -451,11 +451,16 @@
 }
 #complianceChart{
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto;	
 }
 .dashboard-compliance-grid-middle2{
 	padding-bottom: 0;
 	height: 280px;
+}
+
+.sec-menu-expand #complianceChart{
+	height: 228px!important;
+	width: auto!important;
 }
 
 .chart-tooltip {

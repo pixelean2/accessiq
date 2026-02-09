@@ -63,9 +63,27 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+
+.profile-right{
+	transition: all 0.5s;
+}
+.sec-menu-expand .logo,
+.sec-menu-expand .left-sidebar-menu-text,
+.sec-menu-expand .profile-right{
+	display: none;
+}
+
+.sec-menu-expand .left-sidebar{
+	width: 5%;
+}
+.sec-menu-expand.main-section{
+	padding-left: 5%;
+}
+
 .main-section {
 	display: flex;
 	padding-left: 17%;
+	transition: all 0.5s;
 
 }
 
@@ -73,6 +91,7 @@ body {
 	width: 17%;
 	position: fixed;
 	left: 0;
+	transition: all 0.5s;
 }
 
 .right-sidebar {
@@ -93,12 +112,15 @@ body {
 	padding: 24px 24px 24px 16px;
 }
 
-.logo{
-
+.logo-wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	padding-bottom: 24px;
 	position: relative;
 }
-.logo:before{
+
+.logo-wrapper:before{
 	content: '';
 	position: absolute;
 	left: -24px;
@@ -165,7 +187,7 @@ body {
 }
 
 .profile{
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
