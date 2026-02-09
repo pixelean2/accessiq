@@ -1,0 +1,119 @@
+
+.breadcrumbs-wrap{
+	padding-bottom: 16px;
+}
+.breadcrumbs{
+	padding: 12px 16px;
+	background-color: var(--white);
+	border: 1px solid var(--grey200);
+	border-radius: 8px;
+}
+.breadcrumbs ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+.breadcrumbs ul li{
+	padding-left: 14px;
+	padding-right: 14px;
+	position: relative;
+}
+.breadcrumbs ul li:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(-50%, -50%);
+	background-image: url('../images/breadcrumbs-icon.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 7px;
+	height: 12px;
+}
+.breadcrumbs ul li:first-child:before{
+	display: none;
+}
+.breadcrumbs ul li:first-child{
+	padding-left: 0;
+}
+.breadcrumbs ul li span{
+	display: inline-block;
+	color: var(--grey900);
+	text-transform: capitalize;
+}
+.breadcrumbs ul li a{
+	text-decoration: none;
+	color: var(--grey500);
+	text-transform: capitalize;
+}
+
+.scans-details-inner{
+	padding: 16px 16px;
+	background-color: var(--white);
+	border: 1px solid var(--grey200);
+	border-radius: 8px;
+}
+
+.card-top{
+	padding-bottom: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+.card-top-title{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+	padding-bottom: 5px;
+	color: var(--dark);
+}
+.card-top-des p{
+	margin: 0;
+	color: var(--grey600);
+}
+
+.card-top-search-filter{
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: 8px;
+}
+.card-top-filter{
+	height: 40px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--grey200);
+	border-radius: 8px;
+}
+.card-top-filter a{
+	display: inline-flex;
+}
+.card-top-search{
+	min-width: 280px;
+}
+.card-top-search form{
+	width: 100%;
+	position: relative;
+}
+.card-top-search form input{
+	width: 100%;
+	padding: 9px 20px 9px 38px;
+	border: 1px solid var(--grey200);
+	border-radius: 8px;
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--grey500);
+}
+.card-top-search form button{
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	transform: translateY(-50%);
+	background-color: transparent;
+	border: none;
+	padding: 0;
+}
