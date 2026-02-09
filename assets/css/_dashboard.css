@@ -11,7 +11,7 @@
 	letter-spacing: -0.5px;
 	text-transform: capitalize;
 	padding-bottom: 8px;
-	color: #000;
+	color: var(--dark);
 }
 .dashboard-overview-des p{
 	margin-bottom: 0;
@@ -149,7 +149,7 @@
 	font-size: 18px;
 	line-height: 27px;
 	font-weight: 500;
-	color: #000;
+	color: var(--dark);
 	padding-bottom: 4px;
 }
 .dashboard-scans-des p,
@@ -202,7 +202,7 @@
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 500;
-	color: #000;
+	color: var(--dark);
 }
 .dashboard-activetime{
 	line-height: 20px;
@@ -218,7 +218,7 @@
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 24px;
-	color: #000;
+	color: var(--dark);
 }
 .dssr-des-text{
 	font-size: 14px;
@@ -259,7 +259,7 @@
 	font-size: 16px;
 	line-height-step: 24px;
 	font-weight: 500;
-	color: #000;
+	color: var(--dark);
 }
 .scans-issue-bottom{
 	display: flex;
@@ -330,7 +330,7 @@
 }
 .subscription-title{
 	padding-top: 16px;
-	color: #000;
+	color: var(--dark);
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 24px;
@@ -384,7 +384,7 @@
 	font-size: 18px;
 	line-height: 27px;
 	font-weight: 500;
-	color: #000;
+	color: var(--dark);
 	margin: 0;
 }
 .dashboard-compliance-des p{
@@ -422,7 +422,7 @@
 	color: var(--grey600);
 }
 .label-item span b{
-	color: #000;
+	color: var(--dark);
 }
 
 #timeRange,

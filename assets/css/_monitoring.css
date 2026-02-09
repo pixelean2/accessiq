@@ -10,7 +10,7 @@
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 500;
-	color: #000;
+	color: var(--dark);
 	padding-bottom: 8px;
 }
 .monitoring-des p{
@@ -125,7 +125,7 @@
 	font-size: 18px;
 	line-height: 27px;
 	font-weight: 500;
-	color: #000;
+	color: var(--dark);
 	margin: 0;
 }
 .monitoring-website-des p{
@@ -144,6 +144,10 @@
 	line-height: 16px;
 	color: var(--grey900);
 	text-transform: capitalize;
+	transition: all 0.5s;
+}
+.monitoring-website-button a:hover{
+	background-color: #F0F0F5;
 }
 .monitoring-table{
 	border: 1px solid var(--grey200);
