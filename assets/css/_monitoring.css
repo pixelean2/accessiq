@@ -19,14 +19,28 @@
 }
 .monitoring-button a{
 	display: inline-flex;
-	padding: 10px 12px;
+	padding: 9px 11px;
 	background-color: #00A8E0;
+	border: 1px solid #00A8E0;
 	border-radius: 8px;
 	font-size: 16px;
 	line-height: 20px;
 	color: var(--white);
 	text-decoration: none;
 	text-transform: capitalize;
+	gap: 12px;
+	transition: all 0.5s;
+}
+.monitoring-button a svg,
+.monitoring-button a svg path{
+	transition: all 0.5s;
+}
+.monitoring-button a:hover{
+	color: #00A8E0;
+	background-color: transparent;
+}
+.monitoring-button a:hover svg path{
+	fill: #00A8E0;
 }
 
 .monitoring-grid{
@@ -225,3 +239,4 @@
 	font-size: 14px;
 	line-height: 18px;
 }
+

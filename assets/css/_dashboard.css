@@ -30,6 +30,10 @@
 	padding: 10px 12px;
 	border: 1px solid #F0F0F5;
 	border-radius: 8px;
+	transition: all 0.5s;
+}
+.dashboard-overview-link a:hover{
+	background-color: #F0F0F5;
 }
 .dashboard-overview-link-text{
 	line-height: 20px;
@@ -166,6 +170,11 @@
 	line-height: 16px;
 	color: var(--grey900);
 	text-transform: capitalize;
+	transition: all 0.5s;
+}
+.dashboard-scans-button a:hover,
+.dashboard-subscription-button a:hover{
+	background-color: #F0F0F5;
 }
 
 .dashboard-scans-score-grid-item{
@@ -278,7 +287,21 @@
 	line-height: 16px;
 	color: #00A8E0;
 	text-transform: capitalize;
+	transition: all 0.5s;
 }
+
+.scans-issue-btn svg,
+.scans-issue-btn svg path{
+	transition: all 0.5s;
+}
+.scans-issue-btn:hover{
+	background-color: #1EA5DB;
+	color: var(--white);
+}
+.scans-issue-btn:hover svg path{
+	fill: var(--white);
+}
+
 
 .dashboard-subscription-grid{
 	display: flex;
@@ -433,4 +456,43 @@
 .dashboard-compliance-grid-middle2{
 	padding-bottom: 0;
 	height: 280px;
+}
+
+.chart-tooltip {
+	position: absolute;
+	background: #fff;
+	padding: 8px 12px;
+	border-radius: 4px;
+	border: 1px solid #F0F0F4;
+	pointer-events: none;
+	opacity: 0;
+	transform: translate(-50%, -50%);
+	transition: 0.15s ease;
+	text-align: center;
+	z-index: 1000;
+}
+
+.chart-tooltip .label {
+	font-size: 14px;
+	line-height: 18px;
+	color: var(--grey500);
+	padding-bottom: 6px;
+	position: relative;
+}
+.chart-tooltip .label:before{
+	content: '';
+	position: absolute;
+	left: -12px;
+	right: -12px;
+	bottom: 0;
+	height: 1px;
+	background-color: #F0F0F4;
+}
+
+.chart-tooltip .score {
+	padding-top: 6px;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 500;
+	color: #2474FF;
 }
