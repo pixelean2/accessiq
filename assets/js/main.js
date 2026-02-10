@@ -16,9 +16,10 @@ const complianceChart = new Chart(ctx, {
     datasets: [{
       data: complianceData.weekly, 
       backgroundColor: ['#1EA5DB', '#FF9C12', '#FC7E7E'],
-      borderWidth: 0,
+      borderWidth: 6,
+      borderColor: '#fff',
       borderRadius: 8,
-      spacing: 6,
+      spacing: 0,
       cutout: '70%'
     }]
   },
