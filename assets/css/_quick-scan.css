@@ -161,6 +161,8 @@
     padding: 9px;
     border-radius: 8px;
     background-color: var(--blue100);
+    height: 36px;
+    width: 36px;
 
 }
 

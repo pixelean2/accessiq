@@ -1,0 +1,302 @@
+.overview-col-02 {
+    display: flex;
+    gap: 16px;
+}
+
+.overview-link-fill a {
+    padding: 10px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: var(--green500);
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--green500);
+    transition: all 0.3s ease-in-out;
+}
+
+.overview-link-fill a:hover {
+    background-color: var(--green600);
+    color: var(--white);
+    border: 1px solid var(--green600);
+    transition: all 0.3s ease-in-out;
+}
+
+.overview-link-outline a {
+    padding: 10px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--green500);
+    border: 1px solid var(--green500);
+    transition: all 0.3s ease-in-out;
+}
+
+.overview-link-outline a:hover {
+    padding: 10px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: var(--green600);
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--green600);
+    transition: all 0.3s ease-in-out;
+}
+
+.active-audit {
+    padding: 16px;
+    border-radius: 12px;
+    background-color: var(--white);
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.active-audit-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.active-audit-project {
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--grey200);
+}
+
+.border {
+    height: 1px;
+    width: 100%;
+    background-color: #F0F0F5;
+}
+
+.active-audit-project-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.active-audit-project-stats-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.active-audit-project-stats-item {
+    max-width: 160px;
+}
+
+.active-audit-project-stats-item-header {
+    margin-bottom: 8px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.active-audit-project-stats-item-header svg {
+    height: 16px;
+    width: 16px;
+    color: var(--grey600);
+}
+
+.active-audit-project-stats-item-header span {
+    color: var(--grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.active-audit-project-stats-item-value {
+    color: var(--grey900);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.active-audit-project-header-info-titleBox {
+    display: flex;
+    gap: 8px;
+}
+
+.active-audit-project-header-info-leftside {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.active-audit-project-header-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.active-audit-project-details {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.active-audit-project-details-content {
+    color: var(--grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25em;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid var(--grey200);
+    background-color: var(--grey100);
+}
+
+.globe-icon {
+    color: #C34BFF;
+    height: 16px;
+    width: 16px;
+}
+
+.link-icon {
+    color: var(--grey600);
+    height: 14px;
+    width: 14px;
+}
+
+.active-audit-project-header-info-urlbox a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: var(--grey600);
+    font-size: 16px;
+    line-height: 1.25em;
+}
+
+.active-audit-project-header-info-urlbox a:hover {
+    color: var(--grey800);
+}
+
+
+
+
+.progress-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.progress-wrapper svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    /* উপর থেকে শুরু করার জন্য */
+}
+
+.progress-wrapper .bg-track {
+    stroke: #F0F0F5;
+    stroke-width: 7;
+    fill: none;
+}
+
+.progress-wrapper .progress-bar {
+    stroke: #1EDBB8;
+    stroke-width: 7;
+    stroke-linecap: round;
+    fill: none;
+    transition: none;
+}
+
+.progress-wrapper .content-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.progress-wrapper .counter {
+    font-size: 24px;
+    line-height: 1.25em;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.progress-wrapper .status-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.29em;
+    color: #7D7D83;
+}
+
+@keyframes progressAnim {
+    from {
+        stroke-dashoffset: 226.19;
+    }
+    to {
+        stroke-dashoffset: var(--final-offset);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.why-choose {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    background-color: var(--white);
+    border: 1px solid var(--grey200);
+    border-radius: 12px;
+    margin-top: 16px;
+}
+
+.why-choose-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.why-choose-card {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--grey200);
+    background-color: var(--white);
+}
+
+.why-choose-card-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.why-choose-card-icon {
+    padding: 10px;
+    height: 44px;
+    width: 44px;
+    background-color: var(--blue100);
+    border-radius: 4px;
+    border: 1px solid var(--blue200);
+}
+
+.why-choose-card-icon svg {
+    height: 24px;
+    width: 24px;
+    color: var(--blue300);
+}
