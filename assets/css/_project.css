@@ -103,12 +103,12 @@
     justify-content: space-between;
 }
 
-.project-card-header-store-name {
+.project-card-header .project-card-header-store-name h4{
     color: var(--dark);
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 500!important;
     line-height: 1.5em
 }
 
@@ -280,7 +280,7 @@
 
 .critical-issue {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5em;
     color: var(--grey600);
 }
@@ -294,7 +294,7 @@
 
 .moderate-issue {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5em;
     color: var(--grey600);
 }
