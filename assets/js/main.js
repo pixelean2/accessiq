@@ -16,10 +16,13 @@ const complianceChart = new Chart(ctx, {
     datasets: [{
       data: complianceData.weekly, 
       backgroundColor: ['#1EA5DB', '#FF9C12', '#FC7E7E'],
-      borderWidth: 0,
+      borderWidth: 6,
+      borderColor: '#fff',
       borderRadius: 8,
-      spacing: 6,
-      cutout: '70%'
+      spacing: 0,
+
+      cutout: '70%',
+      hoverBorderColor: '#fff'
     }]
   },
   options: {
@@ -162,9 +165,15 @@ const ctx2 = document.getElementById('complianceChart2').getContext('2d');
         y: {
           min: 60,
           max: 100,
+          ticks: {
+            stepSize: 10
+          },
           grid: {
-            borderDash: [5,5],
-            color: '#F0F0F4'
+            display: true,
+            color: '#F0F0F4',
+            lineWidth: 1.5,
+            borderDash: [8, 4],
+            drawBorder: false
           }
         },
         x: {

@@ -189,6 +189,10 @@
 	padding: 15px 16px;
 	color: var(--grey900);
 }
+.monitoring-table table tbody tr td:nth-child(2),
+.monitoring-table table tbody tr td:nth-child(3){
+	color: var(--grey600);
+}
 .monitoring-table table tbody tr:nth-child(2n+2){
 	background-color: var(--grey100);
 }
