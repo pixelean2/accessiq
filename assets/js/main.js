@@ -20,7 +20,9 @@ const complianceChart = new Chart(ctx, {
       borderColor: '#fff',
       borderRadius: 8,
       spacing: 0,
-      cutout: '70%'
+
+      cutout: '70%',
+      hoverBorderColor: '#fff'
     }]
   },
   options: {
