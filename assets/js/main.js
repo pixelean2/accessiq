@@ -1,3 +1,36 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  const buttons = document.querySelectorAll('.notification-tab-button button');
+  const contents = document.querySelectorAll('.notification-tab-content');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', function () {
+      const tagid = this.dataset.tag;
+
+      // remove active from all buttons
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      // remove current from all contents
+      contents.forEach(content => content.classList.remove('current'));
+
+      // add active to clicked button
+      this.classList.add('active');
+
+      // show matched content
+      const target = document.getElementById(tagid);
+      if (target) {
+        target.classList.add('current');
+      }
+    });
+  });
+
+});
+
+
+
+
+
 const ctx = document.getElementById('complianceChart').getContext('2d');
 
 
@@ -195,6 +228,11 @@ const ctx2 = document.getElementById('complianceChart2').getContext('2d');
     }
     barChart.update();
   });
+
+
+
+
+  
 
 
 

@@ -1,0 +1,106 @@
+
+
+.notification-tab-button{
+	padding-bottom: 20px;
+}
+.notification-tab-button ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.notification-tab-button ul li button{
+	background-color: transparent;
+	padding: 10px 12px;
+	border: 1px solid var(--grey200);
+	border-radius: 8px;
+	cursor: pointer;
+}
+.notification-tab-button-text{
+	line-height: 20px;
+	color: var(--grey900);
+	text-transform: capitalize;
+}
+
+.notification-tab-button ul li button.active{
+	background-color: var(--white);
+}
+
+
+.notification-tab-grid-item{
+	padding-bottom: 12px;
+}
+.notification-tab-grid-item:last-child{
+	padding-bottom: 0;
+}
+
+.notification-tab-grid-item-inner{
+	padding: 20px;
+	background-color: var(--white);
+	border: 1px solid var(--grey400);
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.notification-tab-grid-title{
+	margin: 0;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 500;
+	color: var(--dark);
+	padding-bottom: 8px;
+}
+.notification-tab-grid-des p{
+	margin: 0;
+	padding-bottom: 8px;
+	color: var(--grey600);
+}
+.notification-grid-web{
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding-bottom: 16px;
+}
+.notification-tab-web-text{
+	line-height: 20px;
+	color: var(--grey900);
+}
+.notification-tab-time{
+	line-height: 20px;
+	color: var(--grey600);
+}
+
+.notification-tab-grid-button{
+	text-align: right;
+}
+.notification-tab-grid-button a{
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 10px 12px;
+	text-transform: capitalize;
+	border: 1px solid var(--grey200);
+	border-radius: 8px;
+	line-height: 20px;
+	color: var(--grey900);
+	transition: all 0.5s;
+}
+.notification-tab-grid-button a svg path{
+	fill: var(--grey900);
+}
+.notification-tab-grid-button a:hover{
+	background-color: var(--grey200);
+}
+
+.notification-tab-content{
+	display: none;
+}
+.notification-tab-content.current{
+	display: block;
+}
