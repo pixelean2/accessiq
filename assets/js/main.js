@@ -165,9 +165,15 @@ const ctx2 = document.getElementById('complianceChart2').getContext('2d');
         y: {
           min: 60,
           max: 100,
+          ticks: {
+            stepSize: 10
+          },
           grid: {
-            borderDash: [5,5],
-            color: '#F0F0F4'
+            display: true,
+            color: '#F0F0F4',
+            lineWidth: 1.5,
+            borderDash: [8, 4],
+            drawBorder: false
           }
         },
         x: {
