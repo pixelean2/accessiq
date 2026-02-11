@@ -7,7 +7,11 @@
     border: 1px solid var(--grey200);
     background-color: white;
 }
-
+.top-priority-issues-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 
 
 .top-priority-issues-item {
