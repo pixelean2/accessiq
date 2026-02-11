@@ -137,12 +137,16 @@
 	background-color: var(--grey200);
 }
 
+.subscription-billing-des,
+.subscription-history{
+	padding-top: 20px;
+}
 .subscription-billing-info{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	gap: 12px;
-	padding-bottom: 20px;
+	/*cursor: pointer;*/
 }
 .subscription-billing-title{
 	font-size: 20px;
@@ -214,4 +218,8 @@
 .subscription-history-button a.paid-btn:hover{
 	background-color: transparent;
 	color: var(--grey900);
+}
+
+.subscription-grid-item-inner.active .subscription-billing-des{
+	display: none;
 }

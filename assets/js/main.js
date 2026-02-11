@@ -27,6 +27,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+/*document.querySelectorAll('.subscription-billing-info')
+  .forEach(item => {
+    item.addEventListener('click', function() {
+      const parent = this.closest('.subscription-grid-item-inner');
+      parent.classList.toggle('active');
+    });
+});*/
+
+
 
 
 
