@@ -10,6 +10,13 @@
 }
 
 
+.subscription-grid-item{
+	padding-bottom: 16px;
+}
+.subscription-grid-item:last-child{
+	padding-bottom: 0;
+}
+
 .subscription-grid-item-inner{
 	padding: 20px 20px;
 	background-color: var(--white);
@@ -82,4 +89,129 @@
 .subscription-button:hover{
 	background-color: #00ABE6;
 	color: var(--white);
+}
+
+.subscription-billing-cart-item{
+	padding-bottom: 16px;
+}
+.subscription-billing-cart-item:last-child{
+	padding-bottom: 0;
+}
+.subscription-billing-cart-item-inner{
+	padding: 16px 16px;
+	border: 1px solid var(--grey200);
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+.subscription-billing-cart-item-col{
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+.subscription-billing-info-des strong{
+	font-weight: 500;
+	color: var(--grey900);
+	display: block;
+	padding-bottom: 4px;
+}
+.subscription-billing-info-des span{
+	color: var(--grey600);
+}
+
+.subscription-billing-button a{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 8px 12px;
+	border: 1px solid var(--grey200);
+	border-radius: 8px;
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--grey900);
+	transition: all 0.5s;
+}
+.subscription-billing-button a:hover{
+	background-color: var(--grey200);
+}
+
+.subscription-billing-info{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding-bottom: 20px;
+}
+.subscription-billing-title{
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 500;
+	color: var(--dark);
+	text-transform: capitalize;
+}
+
+.subscription-cancel p{
+	margin: 0;
+	padding-bottom: 24px;
+	color: var(--grey600);
+}
+
+.subscription-history-item{
+	padding-bottom: 16px;
+}
+.subscription-history-item:last-child{
+	padding-bottom: 0;
+}
+.subscription-history-item-inner{
+	padding: 16px 16px;
+	border: 1px solid var(--grey200);
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+.subscription-history-date{
+	display: block;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	color: var(--grey900);
+}
+.subscription-history-price{
+	color: var(--grey600);
+}
+.subscription-history-button{
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.subscription-history-button a{
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 8px 12px;
+	border: 1px solid var(--grey200);
+	border-radius: 8px;
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--grey900);
+	transition: all 0.5s;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.subscription-history-button a:hover{
+	background-color: var(--grey200);
+}
+
+.subscription-history-button a.paid-btn{
+	border-color: var(--grey900);
+	background-color: var(--grey900);
+	color: var(--white);
+}
+.subscription-history-button a.paid-btn:hover{
+	background-color: transparent;
+	color: var(--grey900);
 }

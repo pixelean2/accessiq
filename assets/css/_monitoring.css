@@ -17,6 +17,11 @@
 	margin-bottom: 0;
 	color: var(--grey500);
 }
+.monitoring-button{
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
 .monitoring-button a{
 	display: inline-flex;
 	padding: 9px 11px;
@@ -41,6 +46,18 @@
 }
 .monitoring-button a:hover svg path{
 	fill: #00A8E0;
+}
+
+.monitoring-button a:nth-child(2){
+	background-color: var(--white);
+	border-color: var(--grey200);
+	color: var(--grey900);
+}
+.monitoring-button a:nth-child(2) svg path{
+	fill: var(--grey900);
+}
+.monitoring-button a:nth-child(2):hover{
+	background-color: var(--grey200);
 }
 
 .monitoring-grid{
