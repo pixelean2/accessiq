@@ -23,12 +23,22 @@
     gap: 8px;
     font-size: 16px;
     line-height: 20px;
+    border: 1px solid var(--green500);
+transition: 0.3s linear;
 }
+
+.project-overview-link a:hover {
+    background-color: var(--white);
+    color: var(--green500);
+    border: 1px solid var(--green500);
+}
+
+
+
 
 .project-overview-link a svg {
     height: 18px;
     width: 18px;
-    color: var(--white);
 }
 
 .tabs-container {
@@ -121,6 +131,9 @@
     display: flex;
     gap: 4px;
     text-decoration: none;
+}
+.project-card-header-store-link a:hover {
+    color: var(--grey900);
 }
 
 .project-card-header-badge span {
@@ -340,4 +353,11 @@
     color: var(--green500);
     border: 1px solid var(--green500);
     text-decoration: none;
+    background-color: var(--white);
+    transition: 0.3s ;
+}
+.project-card-detail-btn a:hover {
+    color: var(--white);
+    border: 1px solid var(--green500);
+    background-color: var(--green500);
 }

@@ -17,9 +17,9 @@
 }
 
 .overview-link-fill a:hover {
-    background-color: var(--green600);
-    color: var(--white);
-    border: 1px solid var(--green600);
+    background-color: var(--white);
+    color: var(--green500);
+    border: 1px solid var(--green500);
     transition: all 0.3s ease-in-out;
 }
 

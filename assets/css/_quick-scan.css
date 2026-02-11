@@ -107,33 +107,38 @@
 }
 
 #scan-accessibility-form .submit-container {
+    display: inline-flex;
     height: 48px;
-    width: 150px;
 }
 
 
 #scan-accessibility-form .submit-btn {
     text-decoration: none;
     border-radius: 8px;
-    padding: 14px 24px;
+    padding: 14px 20px;
     color: var(--white);
     background-color: var(--green500);
+    border: 1px solid var(--green500);
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
     font-size: 16px;
     line-height: 20px;
-    border: none;
-    height: 48px;
-    width: 150px;
+    /* height: 48px; */
+    transition: 0.3s ease-in-out;
+    width: 146px;
+}
+
+#scan-accessibility-form .submit-btn:hover {
+    color: var(--green500);
+    background-color: var(--white);
 }
 
 #scan-accessibility-form .submit-btn svg {
     height: 18px;
     width: 18px;
-    color: var(--white);
 }
 
 

@@ -47,6 +47,9 @@
 	color: var(--grey500);
 	text-transform: capitalize;
 }
+.breadcrumbs ul li a:hover{
+	color: var(--grey900);
+}
 
 .scans-details-inner{
 	padding: 16px 16px;
