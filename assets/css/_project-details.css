@@ -1,0 +1,336 @@
+.site-overview-container-inner {
+    padding: 16px;
+    background-color: var(--white);
+    border-radius: 12px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.site-overview-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-title {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.25em;
+    margin-bottom: 4px;
+}
+
+.site-overview-body {
+    display: flex;
+    gap: 16px;
+}
+
+.site-overview-body-left,
+.site-overview-body-right {
+    background-color: var(--white);
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--grey200);
+}
+
+.site-overview-body-left {
+    width: 65%;
+}
+
+.site-overview-body-right {
+    width: 35%;
+}
+
+
+.site-overview-body-right-heading {
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-bottom: 16px;
+}
+
+.issue-table {
+    border: 1px solid var(--grey200);
+    border-radius: 8px;
+    background-color: white;
+}
+
+.issue-table-name {
+    color: var(--grey900);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.50em;
+}
+
+.issue-table-content:last-child {
+    border-top: 1px solid #F0F0F5;
+}
+
+.issue-table-content-name {
+    color: var(--grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.issue-table-content-name.moderate {
+    color: #FF9600;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.issue-table-content-name.critical {
+    color: #FF372E;
+    font-weight: 500;
+
+}
+
+
+
+
+
+.issue-table-header {
+    background-color: var(--grey100);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.issue-table-content {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-icon {
+    padding: 9px;
+    border-radius: 8px;
+    height: 36px;
+    width: 36px;
+
+}
+
+.card-icon svg {
+    height: 100%;
+    width: 100%;
+
+}
+
+.stats-grid-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    gap: 12px;
+}
+
+.card-icon.issue {
+    background-color: #FFF7F5;
+}
+
+.card-icon.inprogress {
+    background-color: #F5F8FF;
+}
+
+.card-icon.score {
+    background-color: #FBF5FF;
+}
+
+.card-icon.moderate {
+    background-color: #FFFAF5;
+}
+
+.card-icon.issue svg {
+    color: #FF694B;
+}
+
+.card-icon.inprogress svg {
+    color: #4B81FF;
+}
+
+.card-icon.score svg {
+    color: #C34BFF;
+}
+
+.card-icon.moderate svg {
+    color: #FFAB4B;
+}
+
+
+
+.project-details-history-inner {
+    display: flex;
+    gap: 16px;
+}
+
+.project-details-history-left,
+.project-details-history-right {
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--grey200);
+    background-color: var(--white);
+    width: 100%;
+}
+
+.project-details-history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.project-details-history-header-left h4 {
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-bottom: 4px;
+}
+
+.project-details-history-header-left p {
+    color: var(--Grey-600);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28em;
+}
+
+
+.custom-select-wrapper {
+    position: relative;
+    width: 140px;
+    font-family: 'Segoe UI', sans-serif;
+    user-select: none;
+}
+
+.select-button {
+    background: white;
+    border: 1px solid var(--grey200);
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.select-button:hover {
+    border-color: var(--primary-color);
+}
+
+.selected-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    color: var(--grey900);
+    font-size: 14px;
+    line-height: 1.28em;
+}
+
+.arrow-icon {
+    font-size: 10px;
+    color: var(--grey900);
+    transition: transform 0.3s ease;
+}
+
+/* অপশন লিস্ট স্টাইল */
+.options-list {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 8px;
+    margin: 0;
+    display: none;
+    /* শুরুতে হাইড থাকবে */
+    z-index: 100;
+    border: 1px solid var(--bg-light);
+}
+
+.options-list.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.options-list li {
+    font-size: 14px;
+    line-height: 1.28em;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.options-list li:hover {
+    background: var(--bg-light);
+    color: var(--primary-color);
+}
+
+.icon {
+    font-size: 18px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.rotate-arrow {
+    transform: rotate(180deg);
+}
+
+.project-details-history-body-listitems {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-details-history-body-listitem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--grey100);
+}
+
+.project-details-history-body-listitem-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.history-item-heading {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.history-item-desc {
+    color: var(--grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25em;
+}

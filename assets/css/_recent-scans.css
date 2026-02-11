@@ -40,7 +40,7 @@
 .breadcrumbs ul li span{
 	display: inline-block;
 	color: var(--grey900);
-	text-transform: capitalize;
+	text-transform: normal;
 }
 .breadcrumbs ul li a{
 	text-decoration: none;
