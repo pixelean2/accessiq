@@ -255,3 +255,43 @@
 	border-color: rgba(0, 167, 116, 0.30);
 	background-color: #E6FFF8;
 }
+
+
+.monitoring-plan-des{
+	padding-bottom: 24px;
+}
+.monitoring-plan-des p{
+	margin: 0;
+	color: var(--grey600);
+}
+.monitoring-price .price-grid-price-wrap {
+    padding-bottom: 20px;
+}
+.monitoring-price .price-grid-item:nth-child(2) .price-button a{
+	border: 1px solid #00ABE6;
+	background-color: transparent;
+	color: #00A8E0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+.monitoring-price .price-grid-item:nth-child(2) .price-button a svg path{
+	transition: all 0.5s;
+}
+.monitoring-price .price-grid-item:nth-child(2) .price-button a:hover{
+	background-color: #00ABE6;
+	color: var(--white);
+}
+.monitoring-price .price-grid-item:nth-child(2) .price-button a:hover svg path{
+	fill: var(--white);
+}
+.monitoring-price .price-grid-item:nth-child(3) .price-button a{
+	background-color: #00A8E0;
+	border-color: #00A8E0;
+	color: var(--white);
+}
+.monitoring-price .price-grid-item:nth-child(3) .price-button a:hover{
+	background-color: transparent;
+	color: #00A8E0;
+}
