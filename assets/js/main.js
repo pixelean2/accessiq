@@ -36,6 +36,44 @@ document.addEventListener('DOMContentLoaded', function () {
 });*/
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  const accordionBtn = document.querySelector('.subscription-accordion1');
+  const accordionContent = document.querySelector('.accordion-des1');
+  accordionContent.style.height = accordionContent.scrollHeight + 'px';
+  accordionContent.style.overflow = 'hidden';
+  accordionContent.style.transition = 'height 0.3s ease';
+
+  accordionBtn.addEventListener('click', function () {
+    if (accordionContent.style.height !== '0px') {
+      
+      accordionContent.style.height = '0px';
+    } else {
+      
+      accordionContent.style.height = accordionContent.scrollHeight + 'px';
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const accordionBtn2 = document.querySelector('.subscription-accordion2');
+  const accordionContent2 = document.querySelector('.accordion-des2');
+  accordionContent2.style.height = accordionContent2.scrollHeight + 'px';
+  accordionContent2.style.overflow = 'hidden';
+  accordionContent2.style.transition = 'height 0.3s ease';
+
+  accordionBtn2.addEventListener('click', function () {
+    if (accordionContent2.style.height !== '0px') {
+      
+      accordionContent2.style.height = '0px';
+    } else {
+      
+      accordionContent2.style.height = accordionContent2.scrollHeight + 'px';
+    }
+  });
+});
+
+
+
 
 
 

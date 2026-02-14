@@ -137,16 +137,19 @@
 	background-color: var(--grey200);
 }
 
-.subscription-billing-des,
-.subscription-history{
+.subscription-billing-des-inr,
+.subscription-history-inr{
 	padding-top: 20px;
 }
+
+
+
 .subscription-billing-info{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	gap: 12px;
-	/*cursor: pointer;*/
+	cursor: pointer;
 }
 .subscription-billing-title{
 	font-size: 20px;
