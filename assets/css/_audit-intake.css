@@ -1,0 +1,172 @@
+.audit-page-container{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+
+#expert-audit-intake-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.form-group2 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: var(--white);
+}
+
+.form-group-title {
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.form-group-inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-field-group .input-label {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.form-field-group .input-desc {
+    color: var(--grey600);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.29em;
+}
+
+.form-field-group .input-field {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1em;
+    padding: 12px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--grey200);
+}
+
+.form-field-group .input-field:focus {
+    border: 1px solid var(--green500);
+    outline: none;
+}
+
+.form-field-group .input-field::placeholder {
+    color: var(--grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+.form-field-group .input-field::-webkit-input-placeholder {
+    color: var(--grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+
+.button-group {
+    display: flex;
+    gap: 16px;
+}
+
+
+
+
+
+
+.pricing-wrapper {
+    display: flex;
+    gap: 16px;
+}
+
+.pricing-card {
+    position: relative;
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--white);
+    border: 1px solid var(--grey200);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    width: 100%;
+}
+
+.pricing-card:hover {
+    border-color: var(--green500);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-card input {
+    display: none;
+}
+
+.card-content .card-top2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.duration {
+    color: var(--grey600);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+/* Custom Radio */
+.radio-custom {
+    width: 28px;
+    height: 28px;
+    border: 2px solid var(--grey600);
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Checked state */
+.pricing-card input:checked+.card-content .radio-custom {
+    border-color: var(--green500);
+}
+
+.pricing-card input:checked+.card-content .radio-custom::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: var(--green500);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.pricing-card input:checked~.card-content,
+.pricing-card input:checked+.card-content {
+    outline: none;
+}
