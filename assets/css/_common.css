@@ -105,7 +105,7 @@ body {
 }
 
 .left-sidebar-inner {
-	background-color: var(--white);
+	background-color: var(--green900);
 	padding: 24px 24px;
 	position: relative;
 	height: 100vh;
@@ -131,7 +131,7 @@ body {
 	right: -24px;
 	bottom: 0;
 	height: 1px;
-	background-color: var(--grey200);
+	background-color: var(--white200);
 }
 
 .logo a {
@@ -170,11 +170,11 @@ body {
 }
 .left-sidebar-menu  ul li a:hover,
 .left-sidebar-menu  ul li.active a{
-	background-color: #F0F0FF;
+	background-color: var(--green800);
 }
 .left-sidebar-menu  ul li a:hover svg path,
 .left-sidebar-menu  ul li.active a svg path{
-	fill: #020381;
+	fill: var(--green400);
 }
 .left-sidebar-menu  ul li a i{
 	display: inline-block;
@@ -183,10 +183,11 @@ body {
 .left-sidebar-menu  ul li a svg,
 .left-sidebar-menu  ul li a svg path{
 	transition: all 0.5s;
+	fill: var(--white);
 }
 .left-sidebar-menu-text{
 	line-height: 20px;
-	color: var(--grey900);
+	color: var(--white);
 	text-transform: capitalize;
 }
 
@@ -220,7 +221,7 @@ body {
 	display: flex;
 	gap: 16px;
 	position: relative;
-	background-color: var(--white);
+	background-color: var(--green900);
 }
 .profile-inner:before{
 	content: '';
@@ -229,7 +230,7 @@ body {
 	left: 0;
 	right: 0;
 	height: 1px;
-	background-color: var(--grey200);
+	background-color: var(--white300);
 }
 .profile-left img{
 	border-radius: 100%;
@@ -238,12 +239,12 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 500;
-	color: #000;
+	color: var(--white);
 
 }
 .profile-designation{
 	font-size: 14px;
 	line-height: 18px;
-	color: var(--grey500);
+	color: var(--grey400);
 }
 
