@@ -114,7 +114,9 @@ body {
 }
 
 
-
+.sec-menu-expand .logo-wrapper{
+	justify-content: center;
+}
 
 .logo-wrapper{
 	display: flex;
