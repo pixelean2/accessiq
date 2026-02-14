@@ -254,6 +254,14 @@
 	background-color: var(--grey200);
 	border-radius: 4px;
 }
+.table-action-icon a img{
+	display: block;
+	height: 16px;
+	width: 16px;
+
+}
+
+
 .table-pause{
 	display: inline-block;
 	padding: 3px 8px;

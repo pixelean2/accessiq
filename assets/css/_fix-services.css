@@ -264,10 +264,18 @@
 
 .monitoring-plan-des{
 	padding-bottom: 24px;
+		color: var(--grey600);
+	font-size: 16px;
+	line-height: 1.5em;
+	font-weight: 400;
 }
 .monitoring-plan-des p{
 	margin: 0;
 	color: var(--grey600);
+	font-size: 16px;
+	line-height: 1.5em;
+	font-weight: 400;
+
 }
 .monitoring-price .price-grid-price-wrap {
     padding-bottom: 20px;
