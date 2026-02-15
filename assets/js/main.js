@@ -27,13 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-/*document.querySelectorAll('.subscription-billing-info')
-  .forEach(item => {
-    item.addEventListener('click', function() {
-      const parent = this.closest('.subscription-grid-item-inner');
-      parent.classList.toggle('active');
-    });
-});*/
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -72,6 +66,148 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function(){
+  const nextBtns = document.querySelectorAll(".nextBtn");
+  const backBtn = document.querySelector(".login-back-button-inner");
+  const titleEl = document.querySelector(".login-card-title");
+  const descEl = document.querySelector(".login-card-des p");
+  const form = document.querySelector(".login-form form");
+  const successModal = document.getElementById("sucessModal");
+
+  // Step change function
+  function showStep(stepId) {
+    const steps = document.querySelectorAll(".step");
+    steps.forEach(s => s.classList.remove("active"));
+    const step = document.getElementById(stepId);
+    step.classList.add("active");
+
+    if(stepId === "step1") {
+      titleEl.textContent = "Forgot Password";
+      descEl.textContent = "Enter your registered email address to get OTP";
+    } else if(stepId === "step2") {
+      titleEl.textContent = "Enter OTP";
+      descEl.textContent = "We have sent 6 digit OTP to your registered email";
+    } else if(stepId === "step3") {
+      titleEl.textContent = "Reset Password";
+      descEl.textContent = "Password must be different from previously used passwords.";
+    }
+  }
+
+  // Next buttons
+  nextBtns.forEach(btn => {
+    btn.addEventListener("click", function() {
+      const currentStep = btn.closest(".step");
+
+      // Built-in required validation
+      const inputs = currentStep.querySelectorAll("input[required]");
+      for(let input of inputs) {
+        if(!input.checkValidity()) {
+          input.reportValidity();
+          return;
+        }
+      }
+
+      // OTP validation for step2
+      if(currentStep.id === "step2") {
+        const otpInputs = currentStep.querySelectorAll(".otp-input");
+        for(let otpInput of otpInputs) {
+          if(!otpInput.value.trim()) {
+            alert("Please enter the complete OTP.");
+            otpInput.focus();
+            return;
+          }
+        }
+      }
+
+      const nextStep = currentStep.nextElementSibling;
+      if(nextStep && nextStep.classList.contains("step")) {
+        showStep(nextStep.id);
+      }
+    });
+  });
+
+  // Back button
+  backBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    const currentStep = document.querySelector(".step.active");
+    const prevStep = currentStep.previousElementSibling;
+    if(prevStep && prevStep.classList.contains("step")) {
+      showStep(prevStep.id);
+    }
+  });
+
+  // OTP auto-focus & number-only
+  const otpInputs = document.querySelectorAll(".otp-input");
+  otpInputs.forEach((input, index) => {
+    input.addEventListener("input", (e) => {
+      const value = e.target.value;
+      if(value.length > 0 && index < otpInputs.length - 1) {
+        otpInputs[index + 1].focus();
+      }
+    });
+
+    input.addEventListener("keydown", (e) => {
+      if(e.key === "Backspace" && input.value === "" && index > 0) {
+        otpInputs[index - 1].focus();
+      }
+    });
+
+    input.addEventListener("keypress", (e) => {
+      if(!/[0-9]/.test(e.key)) {
+        e.preventDefault();
+      }
+    });
+  });
+
+  // Form submission
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); 
+
+    const pwd1 = form.querySelector("input[name='password1']").value.trim();
+    const pwd2 = form.querySelector("input[name='password2']").value.trim();
+
+    if(pwd1 === "" || pwd2 === "") {
+      alert("Please fill in both password fields.");
+      return;
+    }
+
+    if(pwd1 !== pwd2) {
+      alert("Passwords do not match.");
+      return;
+    }
+
+    if(pwd1.length < 8) {
+      alert("Password must be at least 8 characters.");
+      return;
+    }
+
+    // Show success modal
+    successModal.style.display = "flex";
+  });
+
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // সব password input wrapper খুঁজে বের করি
+  const passwordWrappers = document.querySelectorAll('.input-filed.password');
+
+  passwordWrappers.forEach(wrapper => {
+    const input = wrapper.querySelector('input');
+    const toggleBtn = wrapper.querySelector('.toggle-password');
+    const icons = toggleBtn.querySelectorAll('img'); // প্রথম img = password icon, দ্বিতীয় img = eye icon
+
+    toggleBtn.addEventListener('click', () => {
+      // যদি টাইপ password হয়, text করি, না হলে password করি
+      const isPassword = input.type === 'password';
+      input.type = isPassword ? 'text' : 'password';
+
+      // icon visibility toggle
+      icons[0].style.display = isPassword ? 'none' : 'inline-block'; // password icon
+      icons[1].style.display = isPassword ? 'inline-block' : 'none'; // eye icon
+    });
+  });
+});
 
 
 

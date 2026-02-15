@@ -81,7 +81,7 @@
 	position: relative;
 }
 .input-filed input{
-	padding: 13px 12px 13px 40px;
+	padding: 13px 40px 13px 40px;
 	border: 1px solid var(--grey200);
 	border-radius: 8px;
 	font-size: 16px;
@@ -136,7 +136,7 @@
 	color: var(--grey900);
 }
 
-.input-filed button[type='submit']{
+.input-filed button{
 	background-color: var(--green500);
 	border-radius: 8px;
 	border: 1px solid var(--green500);
@@ -151,6 +151,19 @@
 	align-items: center;
 	justify-content: center;
 	gap: 12px;
+	transition: all 0.5s;
+}
+
+.input-filed button svg path{
+	transition: all 0.5s;
+}
+
+.input-filed button:hover{
+	background-color: transparent;
+	color: var(--green500);
+}
+.input-filed button:hover svg path{
+	fill: var(--green500);
 }
 
 .other-login{
@@ -242,3 +255,193 @@
 	font-size: 14px;
 	line-height: 18px;
 }
+
+.checkbox-wrapper{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.checkbox-wrapper input[type="checkbox"] {
+	appearance: none;
+	width: 18px;
+	height: 18px;
+	border: 1px solid var(--grey300);
+	border-radius: 4px;
+	cursor: pointer;
+	position: relative;
+	top: -2px;
+}
+.checkbox-wrapper input[type="checkbox"]:checked {
+	background-color: var(--blue300);
+}
+.checkbox-wrapper input[type="checkbox"]:checked::after {
+	content: "✔";
+	color: var(--white);
+	font-size: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.checkbox-wrapper label {
+	font-size: 14px;
+	line-height: 18px;
+	color: var(--grey600);
+
+}
+
+.checkbox-wrapper a {
+	color: var(--grey900);
+	text-decoration: underline;
+}
+.inputcheckbox{
+	padding-bottom: 32px;
+}
+.step{
+	display: none;
+}
+.step.active{
+	display: block;
+}
+
+
+.otp-container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.otp-input {
+  flex: 1;
+  min-width: 0;
+  height: 48px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--grey900);
+  text-align: center;
+  border: 1px solid var(--grey200);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.5s;
+}
+
+
+.otp-resend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.otp-resend span{
+	font-size: 14px;
+	line-height: 18px;
+	color: var(--grey900);
+}
+
+#resendBtn,
+#resendBtn span {
+  background: none;
+  border: none;
+  color: var(--blue300);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 5px;
+  padding: 0;
+}
+
+
+.modal-wrap{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 99;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+.modal{
+	max-width: 454px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.modal-inner{
+	padding: 48px 32px;
+	background-color: var(--white);
+	border-radius: 12px;
+	text-align: center;
+}
+.success-icon{
+	padding: 20px 20px;
+	background-color: #EBFEF8;
+	border-radius: 8px;
+	display: inline-flex;
+	margin-bottom: 24px;
+}
+.success-des{
+	padding-bottom: 40px;
+}
+.success-title{
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: -0.5px;
+	font-weight: 500;
+	color: var(--dark);
+	padding-bottom: 8px;
+}
+.success-des p{
+	margin: 0;
+	color: var(--grey600);
+}
+.success-button a{
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 14px 20px;
+	background-color: var(--green500);
+	border-radius: 8px;
+	border: 1px solid var(--green500);
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--white);
+	text-transform: capitalize;
+	width: 100%;
+	transition: all 0.5s;
+}
+.success-button a:hover{
+	background-color: transparent;
+	color: var(--green500);
+}
+
+.success-button a svg path{
+	transition: all 0.5s;
+}
+.success-button a:hover svg path{
+	fill: var(--green500);
+}
+
+.input-filed button.toggle-password{
+	background-color: transparent;
+	border-radius: 0;
+	border: 0;
+	padding: 0;
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	justify-content: end;
+	width: fit-content;
+}
+.input-filed button.toggle-password img:first-child { display: inline-block; }
+.input-filed button.toggle-password img:last-child { display: none; }
+
