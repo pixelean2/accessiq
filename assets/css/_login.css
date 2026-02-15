@@ -88,6 +88,14 @@
 	line-height: 20px;
 	color: var(--grey500);
 	width: 100%;
+	transition: all 0.5s;
+}
+
+.input-filed input:focus-visible{
+	outline: 0;
+}
+.input-filed input:focus{
+	border-color: var(--green500);
 }
 
 .input-filed.inputprofile:before{

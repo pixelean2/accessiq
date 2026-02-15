@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const form = document.querySelector(".login-form form");
   const successModal = document.getElementById("sucessModal");
 
-  // Step change function
+  
   function showStep(stepId) {
     const steps = document.querySelectorAll(".step");
     steps.forEach(s => s.classList.remove("active"));
@@ -93,12 +93,12 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   }
 
-  // Next buttons
+  
   nextBtns.forEach(btn => {
     btn.addEventListener("click", function() {
       const currentStep = btn.closest(".step");
 
-      // Built-in required validation
+      
       const inputs = currentStep.querySelectorAll("input[required]");
       for(let input of inputs) {
         if(!input.checkValidity()) {
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
       }
 
-      // OTP validation for step2
+      
       if(currentStep.id === "step2") {
         const otpInputs = currentStep.querySelectorAll(".otp-input");
         for(let otpInput of otpInputs) {
@@ -126,17 +126,24 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 
-  // Back button
+  
   backBtn.addEventListener("click", function(e) {
     e.preventDefault();
     const currentStep = document.querySelector(".step.active");
-    const prevStep = currentStep.previousElementSibling;
-    if(prevStep && prevStep.classList.contains("step")) {
-      showStep(prevStep.id);
+    
+    
+    if(currentStep.id === "step1") {
+      window.location.href = "login.html";  
+    } else {
+      
+      const prevStep = currentStep.previousElementSibling;
+      if(prevStep && prevStep.classList.contains("step")) {
+        showStep(prevStep.id);
+      }
     }
   });
 
-  // OTP auto-focus & number-only
+  
   const otpInputs = document.querySelectorAll(".otp-input");
   otpInputs.forEach((input, index) => {
     input.addEventListener("input", (e) => {
@@ -159,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 
-  // Form submission
+  
   form.addEventListener("submit", function(e) {
     e.preventDefault(); 
 
@@ -181,30 +188,35 @@ document.addEventListener('DOMContentLoaded', function(){
       return;
     }
 
-    // Show success modal
+    
     successModal.style.display = "flex";
   });
-
 });
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
-  // সব password input wrapper খুঁজে বের করি
+  
   const passwordWrappers = document.querySelectorAll('.input-filed.password');
 
   passwordWrappers.forEach(wrapper => {
     const input = wrapper.querySelector('input');
     const toggleBtn = wrapper.querySelector('.toggle-password');
-    const icons = toggleBtn.querySelectorAll('img'); // প্রথম img = password icon, দ্বিতীয় img = eye icon
+    const icons = toggleBtn.querySelectorAll('img'); 
+
+    
+    input.type = 'password';
 
     toggleBtn.addEventListener('click', () => {
-      // যদি টাইপ password হয়, text করি, না হলে password করি
+      
       const isPassword = input.type === 'password';
+      
+      
       input.type = isPassword ? 'text' : 'password';
 
-      // icon visibility toggle
-      icons[0].style.display = isPassword ? 'none' : 'inline-block'; // password icon
-      icons[1].style.display = isPassword ? 'inline-block' : 'none'; // eye icon
+      
+      icons[0].style.display = isPassword ? 'none' : 'inline-block';  
+      icons[1].style.display = isPassword ? 'inline-block' : 'none';  
     });
   });
 });
